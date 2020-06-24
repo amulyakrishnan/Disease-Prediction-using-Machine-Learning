@@ -1,0 +1,464 @@
+<!
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+      body, html {
+
+    height: 100%;
+}
+
+
+.bg { 
+    /* The image used */
+    background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.head {
+  color: white;
+  font-family: sans-serif;
+  font-size: 30px;
+  border-bottom: double;
+  text-align: center;
+}
+
+.nav.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: none;
+    }
+}
+
+.tablink {
+    background-color: #FEA127;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: green;
+}
+
+/* Style the tab content */
+.tabcontent {
+  /*  color: white;
+    display: none;
+    padding: 50px;
+    width: 855px;
+    position: relative;
+    height: 350px;*/
+}
+
+
+#Symptom {background-color: white; width: 600px; top:45px ;left: 50px;height:450px;}
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    header {
+        width: 100%;
+        height: 75vh;
+         background-image: url("doc1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    nav {
+        width: 100%;
+        height: 15vh;
+        background-color: #2874A6;
+        
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+    nav .logo {
+        width: 25%;
+        text-align: center;
+        padding-left: 560px;
+
+    }
+
+    nav .menu {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav .menu a {
+        width: 35%;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    nav .menu a:first-child {
+        color: #00b894;
+    }
+
+    nav .menu a:hover {
+        color: #00b894;
+    }
+
+    main {
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    /* section{
+
+    } */
+    section h3 {
+        font-size: 200%;
+        font-weight: 200;
+        letter-spacing:3px;
+        text-shadow: 1px 1px 2px black;
+
+    }
+
+    section h1 {
+        margin: 30px 0 20px 0;
+        font-size: 55px;
+        font-weight: 700;
+        text-shadow: 2px 1px 5px black;
+        text-transform: uppercase;
+    }
+
+    section p {
+        font-size: 25px;
+        color: #eee;
+        word-spacing: 2px;
+        margin-bottom: 25px;
+        text-shadow: 1px 1px 1px black;
+
+    }
+
+    section a {
+        padding: 12px 30px;
+        border-radius: 4px;
+        outline: none;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+        letter-spacing: 1px;
+        transition: all .5s ease;
+        align-items: center;
+    }
+      
+    .container {
+  margin: 0 auto 5px;
+  max-width: 450px;
+
+ 
+}
+
+/* Actual code example */
+.form-field {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.form-field__label {
+  font-size: 0.75rem;
+  -webkit-transform: translateY(-14px);
+          transform: translateY(-14px);
+  display: block;
+  font-weight: normal;
+  left: 0;
+  margin: 0;
+  padding: 18px 12px 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 100%;
+}
+
+.form-field__control {
+  background: #eee;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.form-field__bar {
+  border-bottom: 2px solid #b11adc;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 1%;
+}
+.button {
+  background-color: #2874A6; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button4 {border-radius: 12px;}
+.form-field__input,
+.form-field__textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #999;
+  color: #333;
+  display: block;
+  font-size: 1rem;
+  margin-top: 24px;
+  outline: 0;
+  padding: 0 12px 10px 12px;
+  width: 97%;
+}
+.form-field__input:-ms-input-placeholder ~ .form-field__label,
+.form-field__textarea:-ms-input-placeholder ~ .form-field__label {
+  font-size: 1rem;
+  transform: translateY(0);
+}
+.form-field__input:placeholder-shown ~ .form-field__label,
+.form-field__textarea:placeholder-shown ~ .form-field__label {
+  font-size: 1rem;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.form-field__input:focus ~ .form-field__label,
+.form-field__textarea:focus ~ .form-field__label {
+  color: #2874A6;
+  font-size: 1rem;
+  -webkit-transform: translateY(-14px);
+          transform: translateY(-14px);
+}
+.form-field__input:focus ~ .form-field__bar,
+.form-field__textarea:focus ~ .form-field__bar {
+  border-bottom: 2px solid #2874A6;
+  -webkit-transform: scaleX(150);
+          transform: scaleX(150);
+}
+
+.form-field__textarea {
+  height: 150px;
+}
+    </style>
+
+  </head>
+  <body>
+    {% block body%}
+    
+      <br>
+        <header>
+        <nav>
+            <div >
+                <h1  style="text-align:center;padding-left: 400px;font-family: 'Rubik';">Disease Prediction System</h1>
+              
+            </div>
+        </nav>
+        <main>
+            <section style="color: #2874A6">
+                <h1 style="text-align: center;padding-top: -50px;">THE MOST VALUABLE THING IS YOUR HEALTH</h1>
+                <p style="text-align: center;color:#000;">Our health care system has failed when a doctor fails to treat an illness that is treatable</p>
+            </section>
+
+        </main>
+
+    </header>
+      <br>
+      
+
+    <div>
+        
+ 
+</div>
+<h1 style="color:#2874A6;margin-bottom: 50px;margin-left:600px;"> Symptom Checker</h1>
+
+<div id="Symptom" class="tabcontent" style="margin-left:500px;">
+
+  <form name="SymptomForm" method="POST" action=/disease_predict>
+
+    
+     <div class="container">
+ 
+    <div class="row">
+      
+      <div class="col-sm">
+        <div class="form-field">
+          <div class="form-field__control">
+           <label for="Symptom1" align="left">Symptom1</label>
+      <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom1">
+            <datalist id="symp">
+                {% for symp in symptoms %}
+                <option value= "{{symp}}">{{symp}}</option>
+              {% endfor %}
+            </datalist>
+            <div class="form-field__bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+     <div class="container">
+  
+    <div class="row">
+      
+      <div class="col-sm">
+        <div class="form-field">
+          <div class="form-field__control">
+     <label for="Symptom2" align="left">Symptom2</label>
+      <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom2">
+            <datalist id="symp">
+                {% for symp in symptoms %}
+                <option value= "{{symp}}">{{symp}}</option>
+              {% endfor %}
+            </datalist>
+            <div class="form-field__bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+     <div class="container">
+         <div class="row">
+<div class="col-sm">
+        <div class="form-field">
+          <div class="form-field__control">
+   <label for="Symptom3" align="left">Symptom3</label>
+      <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom3">
+            <datalist id="symp">
+                {% for symp in symptoms %}
+                <option value= "{{symp}}">{{symp}}</option>
+              {% endfor %}
+            </datalist>
+            <div class="form-field__bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+     <div class="container">
+         <div class="row">
+    <div class="col-sm">
+        <div class="form-field">
+          <div class="form-field__control">
+       <label for="Symptom4" align="left">Symptom4</label>
+      <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom4">
+            <datalist id="symp">
+                {% for symp in symptoms %}
+                <option value= "{{symp}}">{{symp}}</option>
+              {% endfor %}
+            </datalist>
+            <div class="form-field__bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="container">
+         <div class="row">
+    <div class="col-sm">
+        <div class="form-field">
+          <div class="form-field__control">
+       <label for="Symptom5" align="left">Symptom5</label>
+      <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom5">
+            <datalist id="symp">
+                {% for symp in symptoms %}
+                <option value= "{{symp}}">{{symp}}</option>
+              {% endfor %}
+            </datalist>
+            <div class="form-field__bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <button type="submit" class="button button4" style="margin-left: 600px;margin-top: 100px;" name=form>Check</button>
+
+</form>
+</div>
+  <form action="/forward/" method="post">
+         <button type="submit" class="button button4" style="margin-left: 400px;margin-top: 50px;" name=form>Doctors</button>       
+              </form>
+
+
+<script> 
+
+  
+function openTab(tabName,elmnt) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+   
+
+}
+
+
+document.getElementById("defaultOpen").click();
+
+</script>
+
+    {% endblock %}
+  </body>
+</html>
+

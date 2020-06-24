@@ -1,0 +1,26 @@
+<div>
+    <table border="1" style="width:100%">
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Doctor Name</th>
+            <th>Specialization</th>
+            <th>Hospital</th>
+            <th>Phone Number</th>
+
+    </thead>
+    <tbody>
+        {% for row in data1 %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+                <td>{{row[3]}}</td>
+                <td>{{row[4]}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+    
+</div>
